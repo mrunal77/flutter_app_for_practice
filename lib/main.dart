@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo App'),
     );
   }
 }
@@ -51,8 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final myController = TextEditingController();
 
   @override
-  void dispose() {
-    // Clean up the controller when the widget is disposed.
+  void dispose() {    
     myController.dispose();
     super.dispose();
   }
@@ -79,11 +78,11 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 80),
               child: TextField(
                 decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    hintText: 'Enter a search term',
+                    hintText: 'Enter your Name',
                     labelText: 'Input Name'),
                 onChanged: (value) => title = value,
               ),
