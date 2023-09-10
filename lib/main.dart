@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'Enter a search term',
-                    labelText: 'Title'),
+                    labelText: 'Input Name'),
                 onChanged: (value) => title = value,
               ),
             ),
