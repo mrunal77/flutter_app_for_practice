@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final myController = TextEditingController();
 
   @override
-  void dispose() {    
+  void dispose() {
     myController.dispose();
     super.dispose();
   }
@@ -77,8 +77,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            Image.asset(
+              'assets/Images/lion-logo.png',
+              height: 200,
+              width: 200,
+            ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 80),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 40),
               child: TextField(
                 decoration: const InputDecoration(
                     border: OutlineInputBorder(),
